@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Car Wash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            height: 100vh;
+        }
+
+        header {
+            background-image: url('347138293_210398571770383_2844292208214474420_n.jpg');
+            background-attachment: fixed;
+            /* This makes the image fixed while scrolling */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            height: 50vh;
+            /* Ensure the hero section covers the entire viewport height */
+
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 100px;
+
+            border: solid;
+            background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: #065a8c5e;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .booking-link {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .booking-link a {
+            background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+
+            
+        }
+
+        .photo-showcase {
+            position: relative;
+        }
+
+        .photo-showcase img {
+            width: 100%;
+            display: none;
+        }
+
+        .photo-showcase img:first-child {
+            display: block;
+        }
+
+        #next-button {
+            position: absolute;
+            right: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 200px;
+        }
+
+        #next-button {
+            display: block;
+            text-align: center;
+            background: none;
+
+            color: rgb(255, 255, 255);
+            border: 2px;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s;
+        }
+
+        #next-button:hover {
+            color: #338ec6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact Us</a>
+    </nav>
+    <header>
+        <h1>Tuupakan Autopesu</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Tervetuloa tupaakan autopesuun</h2>
+            <p>Tarjoamme laadukkaita autonpesupalveluita, jotta autosi näyttää parhaalta.</p>
+            <p>Our services include:</p>
+            <ul>
+                <li>Exterior wash</li>
+                <li>Interior cleaning</li>
+                <li>Waxing and polishing</li>
+                <li>Tire and rim cleaning</li>
+            </ul>
+            <div class="booking-link">
+                <a
+                    href="https://varaa.timma.fi/tuupakanautopesu?fbclid=IwAR01Q346ALWrLJHvs4j_L8MvakTkoi713vPb8yZe5GGZVoA0RYrSlO3HTjA">Book
+                    Now</a>
+            </div>
+        </div>
+        <div class="photo-showcase">
+            <img src="346039551_546371247572029_6698702708250116885_n.jpg" alt="Car Wash 1">
+            <img src="346324370_241584731881987_1995741549005605157_n.jpg" alt="Car Wash 2">
+
+            <button id="next-button">⮞</button>
+        </div>
+    </div>
+    <script>
+        const photos = document.querySelectorAll('.photo-showcase img');
+        const nextButton = document.getElementById('next-button');
+        let currentPhotoIndex = 0;
+
+        nextButton.addEventListener('click', () => {
+            photos[currentPhotoIndex].style.display = 'none';
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            photos[currentPhotoIndex].style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
