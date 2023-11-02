@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
+            height: fit-content;
         }
 
         header {
@@ -49,41 +50,26 @@
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .content {
             background-color: #fff;
+            width: 80%;
+            max-width: 800px;
+            margin: 100px auto;
             padding: 20px;
-        }
-
-        .contact-info {
-            margin-bottom: 20px;
-        }
-
-        .contact-info h2 {
-            margin-top: 0;
-        }
-
-        .contact-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .contact-links li {
-            margin-bottom: 10px;
-        }
-
-        .contact-links a {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
         }
+
+        h2 {
+            text-align: center;
+            color: #0074D9;
+        }
+
+        p {
+            font-size: 16px;
+        }
+      
 
         .heroimg {
             position: fixed;
@@ -99,9 +85,7 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
-            position: fixed;
-            bottom: 0%;
-            width: 100%;
+            
         }
 
         .footer p {
@@ -136,6 +120,19 @@
             margin-top: 20px;
             font-size: 14px;
         }
+        .booking-link {
+  text-align: center;
+  margin: 20px;
+}
+.booking-link a {
+  background-color: #018EF59E;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 45px;
+  font-family: Impact, fantasy;
+}
     </style>
 </head>
 
@@ -152,24 +149,30 @@
     </nav>
     <img src="./carwash-logo.png" alt="carwash logo downloaded from vecteezy.com" class="heroimg">
     <div class="container">
-        <div class="content">
-            <h2>About Us</h2>
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>Address: 123 Car Wash Street, City, Country</p>
-                <p>Email: info@mycarwash.com</p>
-                <p>Phone: +1-123-456-7890</p>
-            </div>
-
-            <h2>Connect with Us</h2>
-            <ul class="contact-links">
-                <li><a href="https://www.whatsapp.com/">WhatsApp</a></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-            </ul>
-        </div>
+        <h2>Tietoa Meistä</h2>
+        <p>
+            Tuupakan Autopesu on sitoutunut tarjoamaan ajoneuvollesi sen ansaitsemaa huolenpitoa ja huomiota. Intohimomme autoja ja ympäristöä kohtaan on saanut meidät uudistamaan autopesukokemusta.
+        </p>
+        <p><strong>Meidän Sitoutumisemme:</strong></p>
+        <ul>
+            <li>🌿 <em>Ympäristöystävällistä Laatua</em>: Olemme ylpeitä sitoutumisestamme ympäristöön. Korkeatehoiset painepesurimme ja laadukkaat ympäristöystävälliset puhdistusaineemme takaavat moitteettoman kiillon samalla kun säilytämme luonnon kauneuden.</li>
+            <li>🛡️ <em>Ei Kompromisseja Laadussa</em>: Ajoneuvosi hyvinvointi on meille ensisijainen tavoite. Taitava tiimimme, viimeisintä huutoa oleva laitteisto ja huippulaatuiset puhdistustuotteemme takaavat korkeimman puhtauden standardin, niin sisältä kuin ulkoa.</li>
+            <li>🕐 <em>Mukavuutta Sinun Ehdoillasi</em>: Ymmärrämme kiireisen aikataulusi. Siksi tarjoamme joustavat aukioloajat ja palvelut, jotka vastaavat tarpeitasi.</li>
+            <li>👤 <em>Ystävällisiä Ammattilaisia</em>: Tiimimme koostuu ystävällisistä ja helposti lähestyttävistä ammattilaisista, jotka ovat intohimoisia autosi ulkonäöstä. Odota lämmintä vastaanottoa ja moitteetonta lopputulosta.</li>
+            <li>🤲 <em>Yhteisöllinen Osallistuminen</em>: Tuupakan Autopesu ei ole vain autopesu; se on osa yhteisöäsi. Osallistumme aktiivisesti paikallisiin aloitteisiin ja hyväntekeväisyyteen, osoittaen sitoutumisemme palvelemaamme aluetta.</li>
+        </ul>
+        <p>Kutsuvat sinut kokemaan Tuupakan Autopesu eron itse. Liity meihin huolehtimaan autostasi ja planeetastamme yhdellä vierailulla. Odotamme innolla sinua perheemme jäsenenä.</p>
+    <div class="booking-link">
+        <a
+            href="https://varaa.timma.fi/tuupakanautopesu?fbclid=IwAR01Q346ALWrLJHvs4j_L8MvakTkoi713vPb8yZe5GGZVoA0RYrSlO3HTjA">Varaa
+            nyt</a>
     </div>
-    <div class="footer">
+</div>
+    
+  
+
+</body>
+  <div class="footer">
         <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=100091911247724" target="_blank"> <img
                     src="Facebook_f_logo_(2021).svg.png"></a>
@@ -189,7 +192,4 @@
             <p>&copy; 2023 Tuupakan Autopesu. All rights reserved.</p>
         </div>
     </div>
-
-</body>
-
 </html>
