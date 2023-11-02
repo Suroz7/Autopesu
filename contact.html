@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - My Car Wash</title>
+    <title>About Us - Tuupakan Autopesu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,14 +25,22 @@
             margin: 0;
         }
         nav {
-            background-color: #444;
+            background-color: rgb(23, 58, 75);
             padding: 10px 0;
-            text-align: center;
+            text-align: right;
+            height: 40px;
         }
+        nav h1 {
+  position: absolute;
+  margin: 0px;
+  top: 10px;
+  left: 10px;
+}
+
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 10px;
+            margin: 15px;
         }
         .container {
             max-width: 1200px;
@@ -64,25 +72,36 @@
             text-decoration: none;
             border-radius: 5px;
         }
+        .heroimg {
+  position: fixed;
+  bottom: 0%;
+  right: -200px;
+  width: 800px;
+  height: auto;
+}
     </style>
 </head>
 <body>
    
     <nav>
+        <a href="./index.html">
+        <h1>Tuupakan Autopesu</h1></a>
         <a href="./index.html">Home</a>
-        <a href="./services.html">Services</a>
-        <a href="./about.html">About Us</a>
-        <a href="./contact.html">Contact Us</a>
+
+
+        <a href="./contact.html">About Us</a>
     </nav>
+    <img src="./carwash-logo.png" alt="carwash logo downloaded from vecteezy.com" class="heroimg">
     <div class="container">
         <div class="content">
-            <h2>Contact Us</h2>
+            <h2>About Us</h2>
             <div class="contact-info">
                 <h2>Contact Information</h2>
                 <p>Address: 123 Car Wash Street, City, Country</p>
                 <p>Email: info@mycarwash.com</p>
                 <p>Phone: +1-123-456-7890</p>
             </div>
+            
             <h2>Connect with Us</h2>
             <ul class="contact-links">
                 <li><a href="https://www.whatsapp.com/">WhatsApp</a></li>

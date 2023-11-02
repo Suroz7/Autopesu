@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - My Car Wash</title>
+    <title>Booking - My Car Wash</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,40 +43,57 @@
             background-color: #fff;
             padding: 20px;
         }
-        .about-us-text {
+        .booking-form {
             margin-bottom: 20px;
         }
-        .booking-link {
-            text-align: center;
-            margin: 20px;
+        .booking-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
-        .booking-link a {
+        .booking-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .booking-form button {
             background-color: #4CAF50;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     
     <nav>
-        <img src="./carwash-logo.png">
-        <a href="./index.html">Home</a>
-        <a href="./services.html">Services</a>
-        <a href="./about.html">About Us</a>
-        <a href="./contact.html">Contact Us</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
     </nav>
     <div class="container">
         <div class="content">
-            <h2>About Us</h2>
-            <div class="about-us-text">
-                <p>My Car Wash is a family-owned and operated car wash dedicated to providing our customers with a clean and professional car washing experience. We have been serving the community for over 10 years, and our mission is to keep your vehicles in top-notch condition.</p>
-                <p>Our experienced team takes pride in delivering high-quality services, from exterior and interior cleaning to waxing and tire and rim cleaning. We use eco-friendly products and the latest car wash technology to ensure your vehicle looks its best.</p>
-            </div>
-            <div class="booking-link">
-                <a href="https://www.examplebooking.com">Book Now</a>
+            <h2>Book an Appointment</h2>
+            <div class="booking-form">
+                <form action="/bookings" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <button type="submit">Book Now</button>
+                </form>
             </div>
         </div>
     </div>
